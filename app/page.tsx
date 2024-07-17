@@ -23,7 +23,8 @@ export default function Home() {
           A simple authentication service
         </p>
         <div>
-          <LoginButton>
+          {/* Using [mode = "modal"] to use login-from as a modal, instead of redirect */}
+          <LoginButton mode="modal" asChild>
             <Button variant="secondary" size="lg">
               Sign in
             </Button>
